@@ -1,0 +1,95 @@
+/* div.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: bisque;
+}
+
+div.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: brown;    
+}
+
+div.box2 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: 10px;
+}
+
+div.box3 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+} */
+
+/* @media screen and (min-width:800px) {
+    div.container {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+* {
+    margin: 0;
+}
+
+
+
+div.box1,
+.box2,
+.box3 {
+    border: 1px solid black;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+
+.box1 {
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+    animation-direction: alternate-reverse;
+
+}
+
+.box1:hover {
+    animation-name: identifier;
+}
+
+@keyframes identifier {
+    5% {
+        width: 250px;
+        background-color: aquamarine;
+    }
+
+    40% {
+        height: 300px;
+        width: 500px;
+        background-color: brown;
+    }
+
+    80% {
+        width: 300px;
+        background-color: rgb(56, 34, 34);
+    }
+
+    100% {
+        width: 200px;
+        background-color: none;
+        transition: 1s;
+    }
+}
+
+
+/* .box1:hover {
+    transform: rotate(290deg);
+    background-color: brown;
+} */
+/* 
+.box1 {
+    transform: scale(2, 4);
+} */
